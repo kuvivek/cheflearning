@@ -1,0 +1,9 @@
+{
+    <% @properties['tenant']['json'].each_with_index do |(key, value), index| %>
+    <% if index != @properties['tenant']['json'].size - 1 %>
+    "<%= key %>" : "<%= value %>",
+    <% else %>
+    "<%= key %>" : "<%= value %>"
+    <% end %>
+    <% end %>
+}
